@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animal Friends - Learn English Animals</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <i class="fas fa-paw"></i>
+                <span>Animal Friends</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#animals" class="nav-link">Animals</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#video" class="nav-link">Video</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Home Section -->
+        <section id="home" class="section active">
+            <div class="hero">
+                <div class="hero-content">
+                    <h1>Welcome to Animal Friends!</h1>
+                    <p>Learn English animal words in a fun and exciting way!</p>
+                    <div class="hero-animals">
+                        <div class="floating-animal">🐶</div>
+                        <div class="floating-animal">🐱</div>
+                        <div class="floating-animal">🐰</div>
+                        <div class="floating-animal">🐸</div>
+                        <div class="floating-animal">🐯</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="features">
+                <div class="feature-card" onclick="showAnimals()">
+                    <i class="fas fa-volume-up"></i>
+                    <h3>Listen & Learn</h3>
+                    <p>Hear how to pronounce animal names correctly</p>
+                </div>
+                <div class="feature-card" onclick="showPictureGallery()">
+                    <i class="fas fa-images"></i>
+                    <h3>Beautiful Pictures</h3>
+                    <p>See cute animal photos and learn about them</p>
+                </div>
+                <div class="feature-card" onclick="document.querySelector('a[href=&quot;#about&quot;]').click()">
+                    <i class="fas fa-info-circle"></i>
+                    <h3>Why Learn English?</h3>
+                    <p>Discover the amazing benefits of learning English</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Animals Section -->
+        <section id="animals" class="section">
+            <div class="container">
+                <h2>Meet Our Animal Friends!</h2>
+                <div class="animal-grid">
+                    <!-- Farm Animals -->
+                    <div class="animal-category">
+                        <h3>Farm Animals</h3>
+                        <div class="animal-cards">
+                            <div class="animal-card" data-animal="cow">
+                                <div class="animal-image">
+                                    <img src="images/cow/294f3e3d6ab6f6c66f70137939c40832.jpg" alt="Cow">
+                                </div>
+                                <h4>Cow</h4>
+                                <p>Moo! Moo!</p>
+                                <button class="sound-btn" data-word="cow">
+                                    <i class="fas fa-volume-up"></i>
+                                </button>
+                            </div>
+                            <div class="animal-card" data-animal="pig">
+                                <div class="animal-image">
+                                    <img src="images/pig/14f3a209b208da46876e2ec0681f050f.jpg" alt="Pig">
+                                </div>
+                                <h4>Pig</h4>
+                                <p>Oink! Oink!</p>
+                                <button class="sound-btn" data-word="pig">
+                                    <i class="fas fa-volume-up"></i>
+                                </button>
+                            </div>
+                            <div class="animal-card" data-animal="chicken">
+                                <div class="animal-image">
+                                    <img src="images/chicken/10dbbb9fd737b02d496774eb1609e247.jpg" alt="Chicken">
+                                </div>
+                                <h4>Chicken</h4>
+                                <p>Cluck! Cluck!</p>
+                                <button class="sound-btn" data-word="chicken">
+                                    <i class="fas fa-volume-up"></i>
+                                </button>
+                            </div>
+                            <div class="animal-card" data-animal="sheep">
+                                <div class="animal-image">
+                                    <img src="images/sheep/13baa7859e7de767cdcb01ed90428084.jpg" alt="Sheep">
+                                </div>
+                                <h4>Sheep</h4>
+                                <p>Baa! Baa!</p>
+                                <button class="sound-btn" data-word="sheep">
+                                    <i class="fas fa-volume-up"></i>
+                                </button>
+                            </div>
+                            <div class="animal-card" data-animal="horse">
+                                <div class="animal-image">
+                                    <img src="images/horse/1f4e7f553c56da952ad866aac205a6bf.jpg" alt="Horse">
+                                </div>
+                                <h4>Horse</h4>
+                                <p>Neigh! Neigh!</p>
+                                <button class="sound-btn" data-word="horse">
+                                    <i class="fas fa-volume-up"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Wild Animals -->
+                    <div class="animal-category">
+                        <h3>Wild Animals</h3>
+                        <div class="animal-cards">
+                            <div class="animal-card" data-animal="lion">
+                                <div class="animal-image">
+                                    <img src="images/lion/82adabc4ac5d63fe14548df6b569c35d.jpg" alt="Lion">
+                                </div>
+                                <h4>Lion</h4>
+                                <p>Roar! Roar!</p>
+                                <button class="sound-btn" data-word="lion">
+                                    <i class="fas fa-volume-up"></i>
+                                </button>
+                            </div>
+                            <div class="animal-card" data-animal="elephant">
+                                <div class="animal-image">
+                                    <img src="images/elephant/2cb6af81d500b2e78a5e651dce1a50c6.jpg" alt="Elephant">
+                                </div>
+                                <h4>Elephant</h4>
+                                <p>Trumpet! Trumpet!</p>
+                                <button class="sound-btn" data-word="elephant">
+                                    <i class="fas fa-volume-up"></i>
+                                </button>
+                            </div>
+                            <div class="animal-card" data-animal="giraffe">
+                                <div class="animal-image">
+                                    <img src="images/giraffe/39d12fbe48f362b927188347a013cbd0.jpg" alt="Giraffe">
+                                </div>
+                                <h4>Giraffe</h4>
+                                <p>Hum! Hum!</p>
+                                <button class="sound-btn" data-word="giraffe">
+                                    <i class="fas fa-volume-up"></i>
+                                </button>
+                            </div>
+                            <div class="animal-card" data-animal="monkey">
+                                <div class="animal-image">
+                                    <img src="images/monkey/8c0f7603547eefc06fa1b29e92b7eab4.jpg" alt="Monkey">
+                                </div>
+                                <h4>Monkey</h4>
+                                <p>Ooh! Ooh!</p>
+                                <button class="sound-btn" data-word="monkey">
+                                    <i class="fas fa-volume-up"></i>
+                                </button>
+                            </div>
+                            <div class="animal-card" data-animal="zebra">
+                                <div class="animal-image">
+                                    <img src="images/zebra/4b019c66e5e3e861997987387624134a.jpg" alt="Zebra">
+                                </div>
+                                <h4>Zebra</h4>
+                                <p>Bray! Bray!</p>
+                                <button class="sound-btn" data-word="zebra">
+                                    <i class="fas fa-volume-up"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pet Animals -->
+                    <div class="animal-category">
+                        <h3>Pet Animals</h3>
+                        <div class="animal-cards">
+                            <div class="animal-card" data-animal="dog">
+                                <div class="animal-image">
+                                    <img src="images/dog/84cc5b11e52bead86f628eb4ad1aa3a7.jpg" alt="Dog">
+                                </div>
+                                <h4>Dog</h4>
+                                <p>Woof! Woof!</p>
+                                <button class="sound-btn" data-word="dog">
+                                    <i class="fas fa-volume-up"></i>
+                                </button>
+                            </div>
+                            <div class="animal-card" data-animal="cat">
+                                <div class="animal-image">
+                                    <img src="images/cat/1223d0236e56250b5ab294b0a62660fa.jpg" alt="Cat">
+                                </div>
+                                <h4>Cat</h4>
+                                <p>Meow! Meow!</p>
+                                <button class="sound-btn" data-word="cat">
+                                    <i class="fas fa-volume-up"></i>
+                                </button>
+                            </div>
+                            <div class="animal-card" data-animal="rabbit">
+                                <div class="animal-image">
+                                    <img src="images/rabbit/6881ed1907f7173b1325ce58c7d689b0.jpg" alt="Rabbit">
+                                </div>
+                                <h4>Rabbit</h4>
+                                <p>Squeak! Squeak!</p>
+                                <button class="sound-btn" data-word="rabbit">
+                                    <i class="fas fa-volume-up"></i>
+                                </button>
+                            </div>
+                            <div class="animal-card" data-animal="hamster">
+                                <div class="animal-image">
+                                    <img src="images/hamster/7e738243642cc63e2ab2027f4ba5390f.jpg" alt="Hamster">
+                                </div>
+                                <h4>Hamster</h4>
+                                <p>Squeak! Squeak!</p>
+                                <button class="sound-btn" data-word="hamster">
+                                    <i class="fas fa-volume-up"></i>
+                                </button>
+                            </div>
+                            <div class="animal-card" data-animal="fish">
+                                <div class="animal-image">
+                                    <img src="images/fish/17764222073e89b59e23d9c005817339.jpg" alt="Fish">
+                                </div>
+                                <h4>Fish</h4>
+                                <p>Glub! Glub!</p>
+                                <button class="sound-btn" data-word="fish">
+                                    <i class="fas fa-volume-up"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- About Section -->
+        <section id="about" class="section">
+            <div class="container">
+                <h2>Why Learn English?</h2>
+                <div class="about-content">
+                    <div class="about-intro">
+                        <p>English is the world's most important international language, and learning English brings countless benefits and opportunities for students!</p>
+                    </div>
+                    
+                    <div class="benefits-grid">
+                        <div class="benefit-card">
+                            <div class="benefit-icon">
+                                <i class="fas fa-globe"></i>
+                            </div>
+                            <h3>Global Communication</h3>
+                            <p>English is the international language of communication. Learning English allows you to connect with people worldwide, expand your horizons, and make friends from different countries.</p>
+                        </div>
+                        
+                        <div class="benefit-card">
+                            <div class="benefit-icon">
+                                <i class="fas fa-graduation-cap"></i>
+                            </div>
+                            <h3>Academic Advantages</h3>
+                            <p>Mastering English gives students access to high-quality learning resources, including international textbooks, academic papers, and online courses, enhancing their educational experience.</p>
+                        </div>
+                        
+                        <div class="benefit-card">
+                            <div class="benefit-icon">
+                                <i class="fas fa-briefcase"></i>
+                            </div>
+                            <h3>Career Development</h3>
+                            <p>In our globalized world, English proficiency is a crucial advantage in the job market, opening doors to more career opportunities and increasing competitiveness.</p>
+                        </div>
+                        
+                        <div class="benefit-card">
+                            <div class="benefit-icon">
+                                <i class="fas fa-brain"></i>
+                            </div>
+                            <h3>Cognitive Development</h3>
+                            <p>Learning English exercises the brain, improving memory, logical thinking, and problem-solving abilities, which greatly benefits students' intellectual development.</p>
+                        </div>
+                        
+                        <div class="benefit-card">
+                            <div class="benefit-icon">
+                                <i class="fas fa-heart"></i>
+                            </div>
+                            <h3>Cultural Understanding</h3>
+                            <p>Through learning English, students can better understand different cultures, develop a global perspective and tolerance, becoming true world citizens.</p>
+                        </div>
+                        
+                        <div class="benefit-card">
+                            <div class="benefit-icon">
+                                <i class="fas fa-rocket"></i>
+                            </div>
+                            <h3>Future Opportunities</h3>
+                            <p>English proficiency provides students with more possibilities for future study abroad, work, travel, and other opportunities, making their life path much broader.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="about-conclusion">
+                        <h3>Start Your English Learning Journey!</h3>
+                        <p>Through our fun animal English learning platform, make learning English enjoyable and easy. Start with adorable animals to develop your interest in English and build a solid foundation for future success!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Video Section -->
+        <section id="video" class="section">
+            <div class="container">
+                <h2>Animal Videos</h2>
+                <div class="video-intro">
+                    <p>Watch fun animal videos and learn more about them!</p>
+                    <p>Click on any video to start watching!</p>
+                </div>
+                <div class="video-grid" id="videoGrid">
+                    <!-- Videos will be loaded here by JavaScript -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Animal Detail Modal -->
+    <div id="animalModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="animalDetail"></div>
+        </div>
+    </div>
+
+
+    <!-- Picture Gallery Modal -->
+    <div id="pictureGalleryModal" class="modal">
+        <div class="modal-content picture-gallery-modal">
+            <span class="close">&times;</span>
+            <div class="picture-gallery-header">
+                <h2>Beautiful Animal Pictures</h2>
+                <p>Click on any picture to see it bigger and learn the word!</p>
+            </div>
+            <div class="picture-gallery-grid" id="pictureGalleryGrid">
+                <!-- Pictures will be loaded here by JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Picture Detail Modal -->
+    <div id="pictureDetailModal" class="modal">
+        <div class="modal-content picture-detail-modal">
+            <span class="close">&times;</span>
+            <div class="picture-detail-content">
+                <div class="picture-detail-image">
+                    <img id="detailImage" src="" alt="Animal Picture">
+                </div>
+                <div class="picture-detail-info">
+                    <h3 id="detailAnimalName"></h3>
+                    <p id="detailAnimalSound"></p>
+                    <button class="sound-btn" id="detailSoundBtn">
+                        <i class="fas fa-volume-up"></i> Listen
+                    </button>
+                    <p id="detailAnimalDescription"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Video Player Modal -->
+    <div id="videoPlayerModal" class="modal">
+        <div class="modal-content video-player-modal">
+            <span class="close">&times;</span>
+            <div class="video-player-content">
+                <h3 id="videoTitle"></h3>
+                <div class="video-container">
+                    <video id="videoPlayer" controls>
+                        <source id="videoSource" src="" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div class="video-info">
+                    <p id="videoDescription"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
